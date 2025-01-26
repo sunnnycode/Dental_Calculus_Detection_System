@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="WPFtartarUI.MVVM.View.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPFtartarUI.MVVM.View"
+             mc:Ignorable="d" Height="432" Width="739">
+
+
+    <Border Background="#272537"
+            CornerRadius="0">
+
+
+
+        <StackPanel Margin="0,1,0,10">
+            <TextBlock Text="라즈베리파이 카메라를 이용한 치석 진단 시스템"
+                                   Foreground="White"
+                                   FontSize="18"
+                                   FontFamily="Berlin Sans FB Demi" Width="388" Margin="20,24,0,50" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.444"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+
+            <Image Source="\Images\Home1.png" Stretch="Fill" Margin="0,0,0,0" Height="200" Width="200"/>
+
+            <TextBlock Text="치석의 성분인 포피린이 405nm 파장의 빛에 반응하여 붉은 형광색을 띄는 점을"
+                                   Foreground="White"
+                                   FontSize="14"
+                                   FontFamily="Berlin Sans FB Demi" Width="675" Margin="20,44,-237,0" HorizontalAlignment="Center"/>
+            <TextBlock Text="이용하여 치석 검출 및 진단하는 시스템이다."
+                                   Foreground="White"
+                                   FontSize="14"
+                                   FontFamily="Berlin Sans FB Demi" Width="675" Margin="20,15,-423,0" HorizontalAlignment="Center"/>
+
+
+        </StackPanel>
+
+
+
+
+
+
+
+    </Border>
+</UserControl>
